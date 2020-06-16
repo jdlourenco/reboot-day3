@@ -24,7 +24,7 @@ from termcolor import colored
 from xgboost import XGBRegressor
 
 MODEL_DIRECTY = "PipelineTest"  # must the same as PATH_TO_MODEL inside Makefile
-MLFLOW_URI = "http://35.210.166.253:5000"
+#MLFLOW_URI = "http://35.210.166.253:5000"
 MLFLOW_URI = "http://127.0.0.1:5000"
 
 

@@ -10,10 +10,16 @@ There are many different things that make models better:
 - Test influce of distance definition
 
 
-## Installation
+## Installation and MlFlow setup
 ```bash
 make install
 ```
+
+1. If you want to run mlflow locally:
+- Open new terminal window and run `mlflow ui` at the root of this repository
+
+2. If you want to log parameters to remote instance
+- modify MLFLOW_URI inside `trainer.py`
 
 ## Parameters to set
  - Inpsect how parameters are passed to `Trainer()` class inside `TaciFareMoel/trainer.py`
