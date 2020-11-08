@@ -3,7 +3,7 @@ import pandas as pd
 from TaxiFareModel.utils import simple_time_tracker
 
 AWS_BUCKET_PATH = "s3://wagon-public-datasets/taxi-fare-train.csv"
-LOCAL_PATH = "/Users/jbizot/Documents/projets/WAGON/taxi-fare-train.csv"
+LOCAL_PATH = "./taxi-fare-train.csv"
 
 DIST_ARGS = dict(start_lat="pickup_latitude",
                  start_lon="pickup_longitude",

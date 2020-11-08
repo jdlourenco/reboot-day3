@@ -26,6 +26,7 @@ from xgboost import XGBRegressor
 MODEL_DIRECTY = "PipelineTest"  # must the same as PATH_TO_MODEL inside Makefile
 #MLFLOW_URI = "http://35.210.166.253:5000"
 MLFLOW_URI = "http://127.0.0.1:5000"
+MLFLOW_URI = "https://mlflow.lewagon.co/"
 
 
 class Trainer(object):
@@ -209,10 +210,10 @@ class Trainer(object):
 if __name__ == "__main__":
     warnings.simplefilter(action='ignore', category=FutureWarning)
     # Get and clean data
-    experiment = "taxifare_set_YOURNAME"
+    experiment = "[PT] [Lisbon] [jdlourenco] Taxifare 00"
     if "YOURNAME" in experiment:
         print(colored("Please define MlFlow experiment variable with your own name", "red"))
-    params = dict(nrows=1000000,
+    params = dict(nrows=10000,
                   local=False,  # set to False to get data from GCP (Storage or BigQuery)
                   optimize=True,
                   estimator="xgboost",
