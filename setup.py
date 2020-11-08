@@ -2,17 +2,18 @@ from setuptools import find_packages
 from setuptools import setup
 
 REQUIRED_PACKAGES = [
+    'category_encoders',
     'joblib',
     'pytz',
     'gcsfs==0.6.0',
     's3fs',
-    'pandas==0.24.2',
+    'pandas',
     'scikit-learn==0.20.4',
     'pygeohash',
     'category_encoders',
     'termcolor',
     'mlflow',
-    'xgboost==0.90',
+    'xgboost',
     'memoized_property',
     'psutil']
 
